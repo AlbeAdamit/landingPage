@@ -1,0 +1,12 @@
+body {
+    background-image: url("andreas-gabler.jpg");
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+h2 {
+    text-align: center;
+    color: aliceblue;
+}

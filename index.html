@@ -8,10 +8,19 @@
 </head>
 <body>
     <h1>Welcome Home</h1>
-    <h2>Now, take a deep breath</h2>
+    <h2>Now, inhale deeply</h2>
     <h2>And exhale to begin your journey</h2>
-    <div class="timer">
-
+    <div id="timer" class="timer"></div>
+    <div class="flexCircle">
+    <div class="circle"></div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite">
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+        </filter>
+    </svg>
     </div>
     <script src="script.js"></script>
 </body>
